@@ -3,6 +3,6 @@ project(custom_ops)
 
 find_package(Torch REQUIRED)
 
-add_executable(example-app example-app.cpp)
+add_executable(example-app C++_file_to_load_pytorch_model.cpp)
 target_link_libraries(example-app "${TORCH_LIBRARIES}")
 set_property(TARGET example-app PROPERTY CXX_STANDARD 11)
